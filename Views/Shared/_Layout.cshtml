@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lakeshore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="96x96" href="~/Assets/images/icon/LakeshoreLogo2-e1631760631355.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/Assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="~/Assets/css/animate.css">
+
+    <link rel="stylesheet" href="~/Assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="~/Assets/css/aos.css">
+
+    <link rel="stylesheet" href="~/Assets/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="~/Assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/Assets/css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="~/Assets/css/flaticon.css">
+    <link rel="stylesheet" href="~/Assets/css/icomoon.css">
+    <link rel="stylesheet" href="~/Assets/css/style.css">
+
+    @*<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>*@
+    <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    @RenderSection("Styles", false)
+    <script>
+        //$(document).ready(function () {
+        //    $('#aiola').DataTable({
+        //        columnDefs: [{ type: 'date', 'targets': [3] }],
+        //        order: [[3, 'desc']],
+        //        "iDisplayLength": 25
+        //    });
+        //});
+
+        $(document).ready(function () {
+            $('#aiola').dataTable({
+                "aLengthMenu": [[25, 50, 75, -1], [25, 50, 75, "All"]],
+                "iDisplayLength": 25
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="~/Home">Lakeshore</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    @*<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>*@
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Masterplan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/Masterplan/Aiola">Aiola</a>
+                            <a class="dropdown-item" href="~/Masterplan/Commercial">Commercial</a>
+                            @*<div class="dropdown-divider"></div>*@
+                            <a class="dropdown-item" href="~/Masterplan/CrossCreek">Crosscreek</a>
+                            <a class="dropdown-item" href="~/Masterplan/EastLake">Eastlake</a>
+                            <a class="dropdown-item" href="~/Masterplan/LakeView">Lakeview</a>
+                            <a class="dropdown-item" href="~/Masterplan/ParkLane">Parklane</a>
+                            <a class="dropdown-item" href="~/Masterplan/StoneGate">Stonegate</a>
+                            <a class="dropdown-item" href="~/Masterplan/StoneGateCentrale">Stonegate Centrale</a>
+                            <a class="dropdown-item" href="~/Masterplan/Venice">Venice</a>
+                            <a class="dropdown-item" href="~/Masterplan/WestWood">Westwood</a>
+                            <a class="dropdown-item" href="~/Masterplan/WoodBridge">Woodbridge</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Model Homes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/ModelHomes/BungalowJewels">Bungalow Jewels</a>
+                            <a class="dropdown-item" href="~/ModelHomes/FortuneDreamHomes">Fortune Dream Homes</a>
+                            <a class="dropdown-item" href="~/ModelHomes/LakeshoreGems">The Lakeshore Gems</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Amenities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/Amenities/CommunityFeatures">Community Features</a>
+                            <a class="dropdown-item" href="~/Amenities/SaintJohnPaul">Saint John Paul II Chapel</a>
+                            <a class="dropdown-item" href="~/Amenities/ClubHouse">Clubhouse</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Packages
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/Packages/LakeshoreVillas">Lakeshore Villas</a>
+                            <a class="dropdown-item" href="~/Packages/EventsAndFacilities">Events and Facilities</a>
+                            <a class="dropdown-item" href="~/Packages/Prenups">Prenups</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Favorscapes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="~/FlavorScapes/Masterplan">Masterplan</a>
+                            <a class="dropdown-item" href="~/FlavorScapes/Nest">Nest</a>
+                            <a class="dropdown-item" href="~/FlavorScapes/Alcove">Alcove</a>
+                            <a class="dropdown-item" href="~/FlavorScapes/Cocoon">Cocoon</a>
+                            <a class="dropdown-item" href="~/FlavorScapes/MPRowHouse">MP Rowhouse</a>
+                            <a class="dropdown-item" href="~/FlavorScapes/Spaces">Spaces</a>
+                            <a class="dropdown-item" href="~/FlavorScapes/DuoLiveAndWork">Duo-Live and Work</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="/Blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="~/FeaturedAmenities" class="nav-link">Feature Amenities</a></li>
+                    <li class="nav-item"><a href="~/ContactUs" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="~/AboutUs" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="">
+        @RenderBody()
+        <hr />
+        <footer class="ftco-footer ftco-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                            <ul class="ftco-footer-social list-unstyled mt-5">
+                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4 ml-md-4">
+                            <h2 class="ftco-heading-2">Masterplan</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Aiola</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Commercial</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Crosscreek</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Eastlake</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Lakeview</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Parklane</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Stonegate</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Stonegate Centrale</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Venice</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Westwood</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Woodbridge</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4 ml-md-4">
+                            <h2 class="ftco-heading-2">Model Homes</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Bungalow Jewels</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Fortune Dream Homes</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>The Lakeshore Gems</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Amenities</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Community Features</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Proximity</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Saint John Paul II Chapel</a></li>
+                                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Clubhouse</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Have a Questions?</h2>
+                            <div class="block-23 mb-3">
+                                <ul>
+                                    <li><span class="icon icon-map-marker"></span><span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span></li>
+                                    <li><a href="#"><span class="icon icon-phone"></span><span class="text">+63 (920) 927 6758 or +63 (2) 725 9518 or +63 (2) 725 9528;</span></a></li>
+                                    <li><a href="#"><span class="icon icon-envelope pr-4"></span><span class="text">info@lakeshore.com.ph</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | LakeShore
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+    <script src="~/Assets/js/jquery.min.js"></script>
+    <script src="~/Assets/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/Assets/js/popper.min.js"></script>
+    <script src="~/Assets/js/bootstrap.min.js"></script>
+    <script src="~/Assets/js/jquery.easing.1.3.js"></script>
+    <script src="~/Assets/js/jquery.waypoints.min.js"></script>
+    <script src="~/Assets/js/jquery.stellar.min.js"></script>
+    <script src="~/Assets/js/owl.carousel.min.js"></script>
+    <script src="~/Assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Assets/js/aos.js"></script>
+    <script src="~/Assets/js/jquery.animateNumber.min.js"></script>
+    <script src="~/Assets/js/bootstrap-datepicker.js"></script>
+    <script src="~/Assets/js/jquery.timepicker.min.js"></script>
+    <script src="~/Assets/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="~/Assets/js/google-map.js"></script>
+    <script src="~/Assets/js/main.js"></script>
+
+
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+    <script>
+
+    </script>
+</body>
+</html>
